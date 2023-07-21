@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(165, 193, 245, 0.274);
+}
+form{
+    /* background-color: rgba(165, 193, 245, 0.274); */
+    padding: 10px;
+   
+}
+#btns{
+    /* background-color: rgba(165, 193, 245, 0.274); */
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+input{
+    padding: 5px 10px;
+}
+#page{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    text-align: center;
+    margin: 10px 20px;
+}
+#p-h5{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+#p-h6{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#p-p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+#addtocart{
+    padding: 4px 10px;
+    font-size: 12px;
+}
+#p-img{
+    width: 100%;
+    height: 250px;
+    padding: 10px 20px opx ;
+    object-fit: cover;
+}
+#edit{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+}
+#btns button{
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    color: black;
+}
