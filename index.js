@@ -118,3 +118,27 @@ for (let i = 0; i < cat.length; i ++){
 document.getElementById("lth").addEventListener("click",handellth) // DATA SORT (low to high) call
 document.getElementById("htl").addEventListener("click",handelhtl) // DATA SORT (low to high) call
 document.querySelector("form").addEventListener("submit", productdata)
+
+
+// Searching Function
+const search=()=>{
+
+    let val = document.getElementById("s-input").value;
+    let data = products.filter((item)=> item.title.toLowerCase().match(val.toLowerCase()));
+    display(data);
+    // let data1 = products.filter((item)=> item.cat.toLowerCase().match(val.toLowerCase()));
+    // display(data1);
+}
+
+document.querySelector("#search").addEventListener("click", search);
+
+//Search fn used in search input.
+
+document.querySelector("#s-input").addEventListener("keypress",(e)=>{
+
+    console.log(e.key);
+
+    if(e.key == "Enter"){
+        search();
+    }
+})

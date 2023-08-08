@@ -62,3 +62,11 @@ input{
     background-color: cornflowerblue;
     color: black;
 }
+#search, #sub{
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    color: black;
+}
+#s-input{
+    margin: 8px;
+}
